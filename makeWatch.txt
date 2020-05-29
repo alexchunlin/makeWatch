@@ -1,0 +1,10 @@
+"MakeWatch"
+
+-time
+-BLE 
+-audio streaming
+-HID outputs
+-Orientation
+-Weather rep
+-Skin Temp
+-Distance
