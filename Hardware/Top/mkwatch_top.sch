@@ -5020,6 +5020,7 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <part name="R9" library="LinnesLab-Passives" deviceset="RESISTOR" device="0402" package3d_urn="urn:adsk.eagle:package:15661898/2" value="10k"/>
 <part name="SUPPLY3" library="LinnesLab-Symbols" deviceset="3.3V" device=""/>
 <part name="J1" library="LinnesLab-Connectors" deviceset="CONN_07" device="-1.27MM"/>
+<part name="SUPPLY6" library="LinnesLab-Symbols" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5649,6 +5650,9 @@ way dynamically.</text>
 <attribute name="VALUE" x="-220.98" y="-73.406" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="-220.98" y="-50.292" size="1.778" layer="95" font="vector"/>
 </instance>
+<instance part="SUPPLY6" gate="G$1" x="-269.24" y="149.86" smashed="yes">
+<attribute name="VALUE" x="-269.24" y="152.654" size="1.778" layer="96" align="bottom-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6032,6 +6036,11 @@ way dynamically.</text>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="-287.02" y1="147.32" x2="-287.02" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="-269.24" y1="147.32" x2="-269.24" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="SUPPLY6" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -6668,12 +6677,6 @@ way dynamically.</text>
 <label x="-58.42" y="68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="-269.24" y1="147.32" x2="-269.24" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="D27/CHGSTAT" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="P0.27"/>
@@ -6758,6 +6761,48 @@ way dynamically.</text>
 <pinref part="U1" gate="G$1" pin="P0.31/AIN7"/>
 <wire x1="-220.98" y1="88.9" x2="-223.52" y2="88.9" width="0.1524" layer="91"/>
 <label x="-223.52" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="7"/>
+<wire x1="-210.82" y1="-53.34" x2="-205.74" y2="-53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="6"/>
+<wire x1="-210.82" y1="-55.88" x2="-205.74" y2="-55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="5"/>
+<wire x1="-210.82" y1="-58.42" x2="-205.74" y2="-58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="4"/>
+<wire x1="-210.82" y1="-60.96" x2="-205.74" y2="-60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="3"/>
+<wire x1="-210.82" y1="-63.5" x2="-205.74" y2="-63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="-210.82" y1="-66.04" x2="-205.74" y2="-66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="-210.82" y1="-68.58" x2="-205.74" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
